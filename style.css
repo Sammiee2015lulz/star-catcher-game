@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    color: white;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    text-align: center;
+    position: relative;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 10px 0;
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+}
+
+canvas {
+    border: 3px solid #00ffff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #00ffff, inset 0 0 20px rgba(0, 255, 255, 0.2);
+    background: #000011;
+}
+
+.hud {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.85);
+    padding: 30px;
+    border-radius: 15px;
+    border: 2px solid #00ffff;
+    box-shadow: 0 0 30px #00ffff;
+    z-index: 10;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    background: #00ffff;
+    color: #000;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.1em;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background: #00cccc;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #00ffff;
+}

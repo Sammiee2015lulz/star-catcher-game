@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Catcher - Fun Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🌟 Star Catcher 🌟</h1>
+        <p>Catch the stars! Avoid the meteors!</p>
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <div class="hud">
+            <div>Score: <span id="score">0</span></div>
+            <div>Lives: <span id="lives">3</span></div>
+            <div>High Score: <span id="highScore">0</span></div>
+        </div>
+        <div id="gameOver" class="overlay hidden">
+            <h2>Game Over!</h2>
+            <p>Final Score: <span id="finalScore">0</span></p>
+            <button id="restartBtn">Play Again</button>
+        </div>
+        <div id="startScreen" class="overlay">
+            <h2>Ready to Catch Stars?</h2>
+            <p>Use ← → or A D to move. Or move your mouse!</p>
+            <button id="startBtn">Start Game</button>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
